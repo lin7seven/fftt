@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+</body>
+<script>
+    //indexOf()
+        var str="fightingfsd";
+        var res=str.indexOf('g');
+        console.log(res);//2
+        var rest=str.indexOf('f',1);
+        console.log(rest);//8
+    //lastIndexOf()从后面开始找但是返回的值是从前算起的
+        var str="fightingfsd";
+        var res=str.lastIndexOf('i');
+        console.log(res);//5
+    //charAt() charCodeAt() str[index]
+        var str="fightingfsd";
+        var res=str.charAt(3);
+        console.log(res);//h
+        var rest=str.charCodeAt(3);
+        console.log(rest);//104:h的Ascii
+        var str="fightingfsd";
+        var restl=str[3];
+        console.log(restl);
+    //concat():相当于+，+更加常见
+        var str="fightingfsd";
+        var str1="hud";
+        var res=str.concat(str1);
+        console.log(res);
+    //substr()从第4个开始返回4个值
+         var str="fightingfsd";
+         var res=str.substr(4,4);
+         console.log(res);//ting
+    //slice()返回第四个到第7个的值，第8个不返回
+         var str="fightingfsd";
+         var res=str.slice(4,8);
+         console.log(res);
+    //replace()：只会替换第一个
+         var str="fightingfsd";
+         var res=str.replace('i','b');
+         console.log(res);
+         //替换多个
+         while(str.indexOf('i')!=-1){
+            str=str.replace('i','b');
+         }
+         console.log(str);
+    //split()
+        var str="figh-tingfsd";
+        var res=str.split('-')
+        console.log(res);  
+//关于
+</script>
+</html>
